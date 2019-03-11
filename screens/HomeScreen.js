@@ -42,7 +42,7 @@ export default class HomeScreen extends React.Component {
             </View>
 
             <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
+              Hello Dailies! Let's get started.
             </Text>
           </View>
 
@@ -108,7 +108,6 @@ const styles = StyleSheet.create({
     color: 'rgba(0,0,0,0.4)',
     fontSize: 14,
     lineHeight: 19,
-    textAlign: 'center',
   },
   contentContainer: {
     paddingTop: 30,
@@ -126,7 +125,7 @@ const styles = StyleSheet.create({
     marginLeft: -10,
   },
   getStartedContainer: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
     marginHorizontal: 50,
   },
   homeScreenFilename: {
@@ -176,7 +175,8 @@ const styles = StyleSheet.create({
   },
   helpContainer: {
     marginTop: 15,
-    alignItems: 'center',
+    marginHorizontal: 50,
+    alignItems: 'flex-start',
   },
   helpLink: {
     paddingVertical: 15,

@@ -1,9 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 19396,
+  "packagerPort": null,
+  "packagerPid": null,
   "expoServerNgrokUrl": "https://bk-7w5.anonymous.daily-todo-app.exp.direct",
   "packagerNgrokUrl": "https://packager.bk-7w5.anonymous.daily-todo-app.exp.direct",
-  "ngrokPid": 21432
+  "ngrokPid": 17380,
+  "webpackServerPort": null
 }
