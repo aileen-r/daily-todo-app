@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Dimensions } from 'react-native';
-
-const width = Dimensions.get('window').width;
+import Gradient from './components/Gradient';
 
 export default class App extends React.Component {
   render() {
@@ -9,9 +8,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style={styles.appTitle}>Daily</Text>
 
-        <View style={styles.card}>
-          <TextInput style={styles.input} placeholder="Add an item!" />
-        </View>
+        <Gradient />
       </View>
     );
   }
@@ -22,7 +19,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
   },
   appTitle: {
     color: '#B62A17',
@@ -30,18 +26,5 @@ const styles = StyleSheet.create({
     marginTop: 60,
     marginBottom: 30,
     fontWeight: '300'
-  },
-  card: {
-    width: width - 20,
-    padding: 20,
-    marginBottom: 10,
-    backgroundColor: '#E4E4E4',
-    flex: 1
-  },
-  input: {
-    padding: 20,
-    borderBottomColor: '#bbb',
-    borderBottomWidth: 1,
-    fontSize: 24
   }
 });
