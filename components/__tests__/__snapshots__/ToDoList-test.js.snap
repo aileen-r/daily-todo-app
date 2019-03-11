@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <Text>
+    List Title
+  </Text>
+  <View>
+    <Text>
+      Checkbox
+    </Text>
+    <Text>
+      List Title
+    </Text>
+  </View>
+  <TextInput
+    allowFontScaling={true}
+    placeholder="Add an item!"
+    style={
+      Object {
+        "borderBottomColor": "#bbb",
+        "borderBottomWidth": 1,
+        "fontSize": 24,
+        "padding": 20,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;

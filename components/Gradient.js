@@ -1,5 +1,7 @@
 import React from "react";
-import { View, TextInput, StyleSheet, Dimensions } from "react-native";
+import { View, StyleSheet, Dimensions } from "react-native";
+
+import ToDoList from "./ToDoList";
 
 //Should be able to import from Layout.js
 const width = Dimensions.get('window').width;
@@ -7,15 +9,15 @@ const width = Dimensions.get('window').width;
 export default class Gradient extends React.Component {
   render() {
     return (
-      <View style={styles.card}>
-        <TextInput style={styles.input} placeholder="Add an item!" />
+      <View style={styles.gradient}>
+        <ToDoList />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  card: {
+  gradient: {
     width: width - 20,
     padding: 20,
     marginBottom: 10,
