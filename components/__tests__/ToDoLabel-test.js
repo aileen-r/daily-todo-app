@@ -1,9 +1,9 @@
 import React from 'react';
 
 import renderer from 'react-test-renderer';
-import App from '../App';
+import ToDoLabel from '../ToDoLabel';
 
 test('renders correctly', () => {
-  const tree = renderer.create(<App />).toJSON();
+  const tree = renderer.create(<ToDoLabel />).toJSON();
   expect(tree).toMatchSnapshot();
 });

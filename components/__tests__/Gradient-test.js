@@ -1,9 +1,9 @@
 import React from 'react';
 
 import renderer from 'react-test-renderer';
-import App from '../App';
+import Gradient from '../Gradient';
 
 test('renders correctly', () => {
-  const tree = renderer.create(<App />).toJSON();
+  const tree = renderer.create(<Gradient />).toJSON();
   expect(tree).toMatchSnapshot();
 });
