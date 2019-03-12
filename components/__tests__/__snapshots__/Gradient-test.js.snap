@@ -6,37 +6,27 @@ exports[`renders correctly 1`] = `
     Object {
       "backgroundColor": "#E4E4E4",
       "flex": 1,
-      "marginBottom": 10,
+      "marginVertical": 30,
       "padding": 20,
       "width": 730,
     }
   }
 >
-  <View>
-    <Text>
-      List Title
-    </Text>
-    <View>
-      <Text>
-        Checkbox
-      </Text>
-      <Text>
-        List Title
-      </Text>
-    </View>
-    <TextInput
-      allowFontScaling={true}
-      placeholder="Add an item!"
-      style={
-        Object {
-          "borderBottomColor": "#bbb",
-          "borderBottomWidth": 1,
-          "fontSize": 24,
-          "padding": 20,
-        }
+  <TextInput
+    allowFontScaling={true}
+    autoCorrect={false}
+    placeholder="Add an item!"
+    placeholderTextColor="#999"
+    returnKeyType="done"
+    style={
+      Object {
+        "borderBottomColor": "#bbb",
+        "borderBottomWidth": 1,
+        "fontSize": 24,
+        "padding": 20,
       }
-      underlineColorAndroid="transparent"
-    />
-  </View>
+    }
+    underlineColorAndroid="transparent"
+  />
 </View>
 `;

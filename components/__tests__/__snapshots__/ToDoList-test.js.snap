@@ -2,29 +2,72 @@
 
 exports[`renders correctly 1`] = `
 <View>
-  <Text>
-    List Title
-  </Text>
-  <View>
-    <Text>
-      Checkbox
-    </Text>
-    <Text>
-      List Title
-    </Text>
-  </View>
-  <TextInput
-    allowFontScaling={true}
-    placeholder="Add an item!"
+  <Text
     style={
       Object {
-        "borderBottomColor": "#bbb",
-        "borderBottomWidth": 1,
-        "fontSize": 24,
-        "padding": 20,
+        "alignSelf": "center",
+        "color": "#B62A17",
+        "fontSize": 36,
+        "fontWeight": "500",
+        "marginBottom": 10,
+        "marginTop": 20,
       }
     }
-    underlineColorAndroid="transparent"
-  />
+  >
+    List Title
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderColor": "#343131",
+              "borderRadius": 15,
+              "borderWidth": 1,
+              "height": 30,
+              "marginRight": 20,
+              "width": 30,
+            },
+            Object {
+              "backgroundColor": "transparent",
+            },
+          ]
+        }
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+          "fontWeight": "300",
+          "marginVertical": 20,
+        }
+      }
+    >
+      Todo List will show here
+    </Text>
+  </View>
 </View>
 `;

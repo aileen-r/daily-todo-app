@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Dimensions } from "react-native";
+import { View, ScrollView, StyleSheet, TextInput, Dimensions } from "react-native";
 
 import ToDoList from "./ToDoList";
 
@@ -7,10 +7,34 @@ import ToDoList from "./ToDoList";
 const width = Dimensions.get('window').width;
 
 export default class Gradient extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      newToDoItem: ''
+    };
+
+    newTodoItemController = toDoLabel => {
+      this.setState({
+        newToDoItem: toDoLabel
+      });
+    };
+  }
+  
   render() {
     return (
       <View style={styles.gradient}>
-        <ToDoList />
+        <TextInput
+          style={styles.input}
+          placeholder={'Add an item!'}
+          value={this.newToDoItem}
+          onChangeText={this.newTodoItemController}
+          placeholderTextColor={'#999'}
+          returnKeyType={'done'}
+          autoCorrect={false}
+        />
+        <ScrollView>
+          <ToDoList />
+        </ScrollView>
       </View>
     );
   }
@@ -20,7 +44,7 @@ const styles = StyleSheet.create({
   gradient: {
     width: width - 20,
     padding: 20,
-    marginBottom: 10,
+    marginVertical: 30,
     backgroundColor: "#E4E4E4",
     flex: 1
   },

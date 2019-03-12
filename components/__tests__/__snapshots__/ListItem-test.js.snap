@@ -1,12 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View>
-  <Text>
-    Checkbox
-  </Text>
-  <Text>
-    List Title
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderColor": "#343131",
+            "borderRadius": 15,
+            "borderWidth": 1,
+            "height": 30,
+            "marginRight": 20,
+            "width": 30,
+          },
+          Object {
+            "backgroundColor": "transparent",
+          },
+        ]
+      }
+    />
+  </View>
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+        "fontWeight": "300",
+        "marginVertical": 20,
+      }
+    }
+  >
+    Todo List will show here
   </Text>
 </View>
 `;
