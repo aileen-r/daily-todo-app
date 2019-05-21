@@ -8,7 +8,8 @@ export default class ListItem extends React.Component {
     return (
       <View style={styles.container}>
         <Checkbox/>
-        <Text style={styles.text}>Todo List will show here</Text>
+        <ToDoLabel/>
+        {/* DeleteIcon */}
       </View>
     );
   }
@@ -18,10 +19,5 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center'
-  },
-  text: {
-    fontWeight: '300',
-    fontSize: 18,
-    marginVertical: 20
   }
 });

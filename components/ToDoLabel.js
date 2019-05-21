@@ -1,10 +1,18 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, StyleSheet } from "react-native";
 
 export default class ToDoLabel extends React.Component {
   render() {
     return (
-      <Text>To Do Label</Text>
+      <Text style={styles.text}>To Do Label</Text>
     );
   }
-}
+};
+
+const styles = StyleSheet.create({
+  text: {
+    fontWeight: '300',
+    fontSize: 18,
+    marginVertical: 20
+  }
+});

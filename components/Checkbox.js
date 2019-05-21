@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     borderColor: '#343131',
     borderRadius: 15,
     borderWidth: 1,
-    marginRight: 20
+    marginRight: 10
   },
   completeCircle: {
     backgroundColor: '#343131'
