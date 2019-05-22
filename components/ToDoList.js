@@ -11,15 +11,11 @@ import ListTitle from "./ListTitle";
 import ListItem from "./ListItem";
 
 export default class ToDoList extends React.Component {
-  state = {
-    isEditing: false
-  };
-
   render() {
     return (
       <View>
          <ListTitle/>
-         <ListItem/>
+         <ListItem editMode={this.props.editMode}/>
        </View>
     );
   }

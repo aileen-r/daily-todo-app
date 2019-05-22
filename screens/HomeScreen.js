@@ -3,6 +3,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 
@@ -14,6 +15,18 @@ export default class HomeScreen extends React.Component {
     header: null,
   };
 
+  state = {
+    editMode: false
+  };
+
+  toggleEditMode = () => {
+    this.setState(prevState => {
+      return {
+        editMode: !prevState.editMode
+      }
+    });
+  };
+
   render() {
     return (
       <View style={styles.gradient}>
@@ -22,9 +35,11 @@ export default class HomeScreen extends React.Component {
         </View>
         <View style={styles.container}>
           <ScrollView>
-            <ToDoList />
+            <ToDoList editMode={this.state.editMode}/>
           </ScrollView>
-          <EditButton/>
+          <TouchableOpacity onPress={this.toggleEditMode}>
+            <EditButton editMode={this.state.editMode}/>
+          </TouchableOpacity>
         </View>
       </View>
     );

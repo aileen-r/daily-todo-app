@@ -5,7 +5,7 @@ export default class EditButton extends React.Component {
   render() {
     return (
       <View style={styles.editButton}>
-        <Text>️️🖋️</Text>
+        <Text>️️{this.props.editMode ? '✖️' : '✒️'}</Text>
       </View>
     );
   }
